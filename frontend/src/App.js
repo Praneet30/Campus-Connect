@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
 import Navbar from "./components/Navbar";
+import MyProducts from "./pages/MyProducts";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/add-product" element={<AddProduct />} />
         <Route path="/edit-product/:id" element={<EditProduct />} />
+        <Route path="/my-products" element={<MyProducts />} />
       </Routes>
     </Router>
   );

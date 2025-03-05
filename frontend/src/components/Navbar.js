@@ -8,12 +8,18 @@ function Navbar() {
 
   return (
     <nav className="bg-gray-800 text-white p-4 flex justify-between">
-      <Link to="/" className="text-lg font-bold">Campus Trade</Link>
+      <Link to="/" className="text-lg font-bold">Campus Connect</Link>
       <div>
         {user ? (
           <>
             <Link to="/add-product" className="mx-2">Sell Product</Link>
-            <button onClick={() => dispatch(logout())} className="bg-red-500 px-3 py-1 rounded">Logout</button>
+            <Link to="/my-products" className="mx-2">My Products</Link>
+            <button 
+              onClick={() => dispatch(logout())} 
+              className="bg-red-500 px-3 py-1 rounded"
+            >
+              Logout
+            </button>
           </>
         ) : (
           <>
